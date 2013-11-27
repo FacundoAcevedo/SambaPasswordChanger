@@ -1,0 +1,21 @@
+sambaPasswordChanger
+
+Autor: Facundo Acevedo < Acv2Facundo [arroba] gmail [punto] com >
+Licencia: Bola
+
+1- Compilar smbP.c usando make
+2- Para que funcione smbP debe tener permisos de ejecución y suid-bit:
+	chmod u=rwx,go=xr,+s smbP
+3- Levantar el directorio con apache, o similar. Y ya :D
+
+
+NOTA: Se debe usar suid, ya que al pasar el password con un printf o un expect,
+el script debería correr en bash. Esto hace que se deba poner bash en sudoers,
+algo que es mas peligroso que usar suid.
+
+http://stackoverflow.com/questions/8532304/execute-root-commands-via-php
+
+
+USO del smbP
+
+./smbP usuario password_Viejo password_Nuevo
