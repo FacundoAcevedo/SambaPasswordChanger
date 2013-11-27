@@ -1,8 +1,8 @@
 /*
  * smbP.c
- * copyleft (>) 2013 Facundo M. Acevedo <facevedo[AT]csjn[DOT]com[DOT]ar>
+ * copyleft (>) 2013 Facundo M. Acevedo <Acv2Facundo[AT]gmail[DOT]com>
  *
- * Distributed under terms of the GPLv3+ license.
+ * Distributed under terms of the BOLA license.
  */
 
 /*argv[1] = n_usuario
